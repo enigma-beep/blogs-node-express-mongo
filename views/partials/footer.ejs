@@ -1,0 +1,106 @@
+    </div>
+    <div class="footer">
+        <p></p>
+     </div>
+
+     <footer>
+        <div class="section-container footer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <a href="https://www.nibiaadevices.com/index.html">
+    
+                                <img alt="Nibiaa Devices" src="nibiaalogo.png"
+                                    style="width: 350px; height: 120px; margin: 0 auto; display: block;"></a>
+    
+    
+                        </div>
+    
+                        <p style="text-align: justify;">An IoT enabled agriculture solutions software providing data &
+                            recommendations during the entire agricultural life cycle process with the help of AI
+                            Models & human consultation using agricultural scientists to maximize productivity.</p>
+    
+                    </div>
+    
+    
+                    <div class="col-md-4">
+                        <div class="row"><br></div>
+    
+    
+                        <h4 style="text-align: center;">Connect with us on </h4>
+    
+                        <p style="text-align: center;">
+                            <a href="https://www.facebook.com/NibiaaDevices/" target="_blank"
+                                class="social-round-icon white-round-icon fa-icon" title="">
+                                <i class="fa fa-facebook" aria-hidden="false"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank"
+                                class="social-round-icon white-round-icon fa-icon" title="">
+                                <i class="fa fa-twitter" aria-hidden="false"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/nibiaa-consultancy-llp/" target="_blank"
+                                class="social-round-icon white-round-icon fa-icon" title="">
+                                <i class="fa fa-linkedin" aria-hidden="false"></i>
+                            </a>
+                        </p>
+    
+                        <p style="text-align: center;"><small>© 2021 Nibiaa Devices<br>| Website designed with ❤️ by
+                                Abhigyan, Nimish
+                                & Harsh |</small></p>
+                    </div>
+    
+                    <div class="col-md-4" style="padding-left: 10px; padding-right: 10px;">
+                        <div class="row"><br></div>
+                        <h4 style="text-align: center;">Subscribe to newsletter</h4>
+    
+                        <div class="form-group">
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                            <script>
+                                hbspt.forms.create({
+                                    portalId: "8741322",
+                                    formId: "369e9739-621b-414c-88fd-c97e01a69e36",
+                                    cssRequired: ".submitted-message { color: #ffffff; }"
+                                });
+                            </script>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <div class="ui inverted segment" style="margin: 0px; background-color: black;">
+        <div class="ui inverted secondary pointing menu">
+          
+          <a href="/blogs/new" class="item">
+          <i class="add circle icon"></i> 
+            New Post
+          </a>
+          <div class="right menu">
+            <% if(!currentUser){ %>
+              <a class="ui item" href="/login">LogIn</a>
+              <a class="ui item" href="/register">SignUp</a>
+            <% } else{ %>
+              <a class="ui item" href="#">Hey, <%= currentUser.username %>!</a>
+              <a class="ui item" href="/logout">LogOut</a>
+            <% } %>
+          </div>
+        </div>
+        
+      </div>
+     
+        <script>
+            $(document).ready(function(){
+              $('.ui .item').on('click', function() {
+               $('.ui .item').removeClass('active');
+               $(this).addClass('active');
+            }); 
+             
+            })
+             
+            </script>
+    </body>
+</html>

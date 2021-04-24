@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Blog App
+            </title>
+            <base href="/">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+            <link rel="stylesheet" type="text/css" href="/stylesheet/app.css">
+            <link rel="stylesheet" href="./stylesheet/main.a3f694c0.css" >
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+        </head>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <body>
+
+          <header>
+            <nav class="navbar  navbar-fixed-top navbar-default">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="https://www.nibiaadevices.com/index.html" title="">
+                    <img src="nibiaa_header_logo.png" class="navbar-logo-img" alt="">
+                  </a>
+                </div>
+          
+                <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+                  <ul class="nav navbar-nav navbar-right">
+                   <li><a href="https://www.nibiaadevices.com/index.html" title="" class="active">Home</a></li>
+                   <li><a href="https://platform.nibiaadevices.com" title="" class="active">Platform</a></li>
+                   <li><a href="https://www.nibiaadevices.com/channel.html" title=""> Channel Partner</a></li>
+                    
+                    <li class="drpdown">
+                        <a href="" onclick="return false;" class="drpbtn">Solutions</a>
+                        <div class="drpdown-content">
+                          <a href="https://www.nibiaadevices.com/smartagri.html">Smart Agriculture Solution</a>
+                          <a href="https://www.nibiaadevices.com/smartwater.html">Smart Water Testing Solution </a>
+                          <a href="https://www.nibiaadevices.com/smartfire.html">Smart Fire Alarm Solution</a>
+                          <a href="https://www.nibiaadevices.com/smartpark.html">Smart Parking Management Solution</a>
+                          <a href="https://www.nibiaadevices.com/smartflood.html">Smart Flood Monitoring Solution</a>
+                          <a href="https://www.nibiaadevices.com/smartwaste.html">Smart Waste Management Solution</a>
+                        </div>
+                      </li>
+                    <!--<li><a href="./components.html" title="">Blogs</a></li>-->
+                    <li><a href="https://www.nibiaadevices.com/about.html" title=""> About us</a></li>
+                    <li><a href="https://www.nibiaadevices.com/contact.html" title="">Contact Us</a></li>
+                    <li>
+                      <p>
+                        <a href="https://www.nibiaadevices.com/download.html" class="btn btn-primary navbar-btn" title="">Request Demo</a>
+                      </p>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+            
+            
+            <% if(error && error.length > 0){%>
+            <div class="ui red message"><%= error %></div>
+            <% } %>
+            <% if(success && success.length > 0){%>
+            <div class="ui floating message"><%= success %></div>
+            <% } %>
+            <div id="love-u">
+              </div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function (event) {
+                  navActivePage();
+                });
+                  
+              </script>
+        </body>
+    </html>
