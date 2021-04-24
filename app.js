@@ -69,8 +69,8 @@ app.use("/blogs/:id/comments", commentRoutes);
 
 // Restful Route
 app.get("/", function(req, res){
-    // res.redirect("blogs");
-    res.render('home');
+    res.redirect("blogs");
+    // res.render('home');
 });
 
 //In cloud9
