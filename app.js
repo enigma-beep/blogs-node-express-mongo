@@ -7,6 +7,7 @@
 // })
 
 // server.listen(process.env.PORT || 3009)
+const port = process.env.PORT || 3012
 
 var bodyParser          = require("body-parser"),
     mongoose            = require("mongoose"),
@@ -77,6 +78,6 @@ app.get("/", function(req, res){
 //     console.log("SERVER IS STARTED");
 // })
 //Otherwise run locally
-app.listen(3012, function(){
+app.listen(port, function(){
     console.log("SERVER IS STARTED at 3012");
 })
