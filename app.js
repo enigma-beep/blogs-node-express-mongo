@@ -29,7 +29,7 @@ var commentRoutes = require("./routes/comments");
     
 //App Config
 // mongoose.connect("mongodb://nibiaa-admin:Nibiaa%401234@cluster0-shard-00-00.odtgd.mongodb.net:27017,cluster0-shard-00-01.odtgd.mongodb.net:27017,cluster0-shard-00-02.odtgd.mongodb.net:27017/blog?ssl=true&replicaSet=atlas-11hjem-shard-0&authSource=admin&retryWrites=true&w=majority", {useMongoClient: true});
-mongoose.connect("mongodb://nibiaa-admin:Nibiaa%401234@cluster0-shard-00-00.odtgd.mongodb.net:27017,cluster0-shard-00-01.odtgd.mongodb.net:27017,cluster0-shard-00-02.odtgd.mongodb.net:27017/blog?ssl=true&replicaSet=atlas-11hjem-shard-0&authSource=admin&retryWrites=true&w=majority", {useMongoClient: true});
+mongoose.connect("mongodb://nibiaa:mibiaa1234@cluster0-shard-00-00.bqkkn.mongodb.net:27017,cluster0-shard-00-01.bqkkn.mongodb.net:27017,cluster0-shard-00-02.bqkkn.mongodb.net:27017/blog?ssl=true&replicaSet=atlas-9fha0i-shard-0&authSource=admin&retryWrites=true&w=majority", {useMongoClient: true});
 
 mongoose.Promise = global.Promise;
 app.set("view engine", "ejs");
